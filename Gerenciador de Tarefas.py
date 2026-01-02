@@ -1,5 +1,3 @@
-#Gerenciador de Tarefas 27/12/25
-
 tarefas = []
 
 while True:
@@ -21,10 +19,10 @@ while True:
                 if len(tarefas) == 0:
                     print('Você ainda não tem nenhuma tarefa!')
 
-                else: #range para contar e len para ver a quantidade de itens
+                else: 
                     for i in range(len(tarefas)):
-                        numeracao = i + 1 #só o 'i' vai mostrar '0, 1, 2...'
-                        print(f'{numeracao}. {tarefas[i]}') #usar colchetes [] para acessar os itens da lista.
+                        numeracao = i + 1 
+                        print(f'{numeracao}. {tarefas[i]}') 
 
         elif escolha == 3:
             remover = input('Digite o nome do item que deseja remover: ')
@@ -46,4 +44,5 @@ while True:
 
     except ValueError:
         print('Escolha uma das 3 opções!')
+
 
